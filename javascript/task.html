@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Picker and Border Setter</title>
+  <style>
+    div{
+        border:3px solid red;
+       padding: 5%;
+       h{
+          
+       }
+    }
+   
+  </style>
+</head>
+<body>
+<div id="myParagraph">
+  <p > <h1 id="head">Virat Kholi</h1><B>(born 5 November 1988)</b> Delhi into a Punjabi Hindu family. His mother Saroj Kohli is a housewife
+  while his father Prem Nath Kohli worked as a criminal lawyer. He has an elder brother Vikas and an elder sister Bhawna.<br>
+  His formative years were spent in Uttam Nagar. His early education was at Vishal Bharti Public School.<br>
+  As per his family, Kohli exhibited an early affinity for cricket as a 3-year-old.
+  He would pick up a bat and request his father to bowl to him.<br>
+</p>
+</div>
+<br>
+  text color:
+  <input type="color" id="textColorPicker" value="red"><br>
+ 
+  border color:
+  <input type="color" id="borderColorPicker" value="red"><br>
+   heading color:
+  <input type="color" id="headcolor" value="red"><br><br>
+  <button class="color-button" onclick="Apply()">Apply</button>
+
+  <script>
+    function Apply() {
+      const color = document.getElementById('textColorPicker').value;
+      document.getElementById('myParagraph').style.color = color;
+      const colorh = document.getElementById('headcolor').value;
+      document.getElementById('head').style.color = colorh;
+      const color2 = document.getElementById('borderColorPicker').value;
+      document.getElementById('myParagraph').style.borderColor = color2;
+    }
+  </script>
+</body>
+</html>

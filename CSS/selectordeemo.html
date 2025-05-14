@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    b{
+        background-color: green;
+    }
+
+    div b, div > *
+    {
+        border: 1px  solid red ;
+    }
+        div b{
+            background-color: red;
+
+        }
+
+        * 
+        {
+         border:1px solid red ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <b> this is bold tag in div 1</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquam facere rerum! Natus distinctio possimus minima deserunt cupiditate aut aliquam vitae iusto, dolores eum, maiores nemo corrupti a culpa voluptatem.
+            </p>
+        </div>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit.</b> Delectus, eligendi.</p>
+    </div>
+    
+    <b> Tis is bold tag in body 1</b>
+    <b> Tis is bold tag in body 2</b>
+    <b> Tis is bold tag <i> italic in body in bold</i>in body 3</b>
+    <b> Tis is bold tag in body 4</b>
+    <b> Tis is bold tag in body 5</b>
+
+    <i> italic in body in bold</i>
+    <i> italic in body in bold</i>
+</body>
+</html>
